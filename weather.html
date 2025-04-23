@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful App</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+    <header>
+        <span>
+            <img src="logo.png" alt="" width="25">
+            <b>UsefulApp</b>
+        </span>
+
+        <nav>
+            <a href="index.html"> <img src="home.png" alt="" width="18"> Home</a>
+            <a href="about.html"> <img src="about.png" alt="" width="18"> About App</a>
+            <a href="currency.html"> <img src="currency.png" alt="" width="18"> Currency Converter</a>
+            <a href="weather.html"> <img src="weather.png" alt="" width="18"> Weather Condition</a>
+            <a href="contact.html"> <img src="contact.png" alt="" width="18"> Contact us</a>
+
+        </nav>
+        <button class="menu"></button>
+
+    </header>
+    <main class="weather-main">
+        <video src="video.mp4" muted loop autoplay></video>
+        <div class="curtain"></div>
+
+        <form class="weather-form">
+               <input type="text" placeholder="location" class="location">
+               <button type="submit">GO →</button>
+        </form>
+
+        <section class="weather-details">
+             <span class="temp-img-box">  <img src="cloud.png" alt="" class="temp-img"> </span>
+                <div class="temp-div cels">
+                        
+                        <h1>
+                            <span class="c-temp">0</span><sup>o<sub>C</sub></sup>
+                        </h1>
+                        <label>Temp in celsius</label>
+                </div>
+
+                <div class="temp-div fah">
+                
+                    <h1>
+                        <span class="f-temp">0</span><sup>o<sub>F</sub></sup>
+                    </h1>
+                    <label>Temp in Fahrenheit</label>
+                </div>
+
+                <div class="location-div">
+            
+                           <span> <b>City</b> <small class="city">Lagos</small> </span>
+                           <span> <b>Country</b> <small class="country">Nigeria</small> </span>
+                 
+                 
+                </div>
+
+                <div class="condition-div">
+                
+                
+                    <span> <b>condition</b> <small class="condition">Fair</small> </span>
+               
+                </div>
+        </section>
+
+
+
+      
+    </main>
+    <footer>
+        <p>&copy; Copyright <span class="year"></span>. All rights reserved. Powered by Codeprof Academy.</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script src="wather.js"></script>
+</body>
+
+</html>

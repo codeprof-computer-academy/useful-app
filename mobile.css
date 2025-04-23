@@ -1,0 +1,413 @@
+@media(max-width:450px){
+
+       header{
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+       }
+
+       header span{
+        display: flex;
+        gap:10px;
+        align-items: center;
+       }
+
+       header span b{
+        color:crimson;
+       }
+
+       .menu{
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        background-image: url("menu.png");
+        background-size: cover;
+        background-position: center center;
+       }
+
+       nav{
+        position: absolute;
+        top:70px;
+        left:-320px;
+        width: 320px;
+        height: calc(100vh - 110px);
+        background-color: crimson;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 40px 20px;
+        gap:30px;
+        transition: 0.5s;
+       }
+
+       nav a{
+        display: flex;
+        align-items: center;
+        gap:15px;
+        color:rgba(255,255,255,0.6);
+        font-size: 22px;
+       }
+
+       nav a img{
+            width: 25px;
+            opacity: 0.6;
+            transition: 0.5s;
+       }
+
+       nav a:hover img{
+            opacity: 1;
+            transform: scale(1.3);
+       }
+
+       nav a:hover{
+        color:white;
+       }
+
+       main{
+        width: 100%;
+        height: calc(100vh - 110px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .currency-main{
+          flex-direction: column;
+          gap:30px;
+       }
+       .banner{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(148, 9, 74, 0.5),rgba(32, 4, 135, 0.6)),url("bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+       }
+
+       .banner h1{
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        color:white;
+        font-weight: 200;
+        margin-bottom: 10px;
+       }
+
+       .banner p{
+            color:white;
+            font-size: 15px;
+            font-weight: 100;
+            font-style: italic;
+            margin-bottom: 70px;
+       }
+
+       .social{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+
+       }
+
+       .social a img{
+        transition: 0.5s;
+       }
+
+       .social a:hover img{
+        transform: scale(1.3);
+       }
+
+
+       .currency-form{
+            width: 90%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 20px;
+            gap:15px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+
+       }
+
+       .currency-form h2{
+          color:crimson;
+       }
+
+       .currency-form label{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap:10px;
+          color:black;
+       }
+
+       .currency-form label input, label select{
+          width: 100%;
+          padding: 8px 20px;
+          font-size: 18px;
+          border: 1px solid grey;
+          outline: none;
+          border-radius: 10px;
+
+       }
+
+       input:focus, select:focus{
+          border-color: crimson;
+       }
+
+       .currency-form span{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap:15px;
+          margin-top: 20px;
+       }
+
+       .currency-form span button{
+          width: 50%;
+          background-color: transparent;
+          border: none;
+          color: crimson;
+          font-size: 20px;
+       }
+
+
+       .result-display{
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+          padding: 20px 30px;
+          
+       }
+
+       .weather-main{
+         width: 100%;
+         height: calc(100vh - 110px);
+         position: relative;
+         padding: 20px;
+         
+       }
+
+
+
+       .weather-main video{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         position: absolute;
+         top:0;
+         left:0;
+         z-index: -10;
+       }
+
+       .curtain{
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top:0;
+         left:0;
+         background-color: rgba(0,0,0,0.6);
+         z-index: -5;
+       }
+
+       .weather-main form{
+         position: absolute;
+         top:0;
+         left:50%;
+         transform: translateX(-50%);
+         padding: 20px;
+         background-color: crimson;
+         width: 100%;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      
+       }
+
+       .weather-main form input{
+         width: 100%;
+         padding: 10px 20px;
+         outline: none;
+         border:none;
+         border-radius: 5px;
+         font-size: 18px;
+         padding-right: 80px;
+       }
+
+       .weather-main form button{
+         position: absolute;
+         right: 40px;
+         top:50%;
+         transform: translateY(-50%);
+         background-color: transparent;
+         color:crimson;
+         border: none;
+         font-size: 20px;
+       }
+
+       .weather-details{
+           position: relative;
+           width: 100%;
+           height: calc(100% - 80px);
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: flex-start;
+        
+       }
+
+       .temp-div{
+         width: fit-content;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap:10px;
+         padding: 10px;
+         border-radius: 20px;
+         background-color: rgba(87, 10, 10, 0.3);
+         z-index: 10;
+         color:white;
+       }
+
+       .temp-div h1{
+         font-size: 40px;
+         color:white;
+         font-weight: 100;
+       }
+
+       .temp{
+         font-weight: bold;
+       }
+       
+       .cels{
+         position: absolute;
+         top:30px;
+         right: 5px;
+       }
+
+       .fah{
+         position: absolute;
+         top:100px;
+         left: 5px;
+       }
+
+       .location-div{
+         width: fit-content;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         background-color: rgba(87, 10, 10, 0.3);
+         color:white;
+         position: absolute;
+         bottom: 50px;
+         left: 10px;
+         padding: 10px 30px;
+         gap:10px;
+       }
+
+       .location-div span{
+         width: 100%;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         gap:15px;
+       }
+
+       .location-div span b{
+         width: 40%;
+         display: flex;
+         justify-content: flex-start;
+       }
+
+       .location-div span small{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 60%;
+       }
+
+       .temp-img-box{
+        width: 120px;
+        height: 120px;
+        background-color: rgba(87, 10, 10, 0.3);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        bottom: 100px;
+          right: 10px;
+       }
+       .temp-img{
+        
+         object-fit: contain
+       }
+
+       .condition-div{
+        color:white;
+        background-color: rgba(87, 10, 10, 0.3);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        
+        
+       }
+
+       .condition-div span {
+        width: 100%;
+        font-size: 20px;
+       }
+       footer{
+        width: 100%;
+        height: 40px;
+        background-color: crimson;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       footer p{
+        font-size: 10px;
+        color:white;
+       }
+
+
+       /* utility class */
+       .show-nav{
+           left:0;
+       }
+}
